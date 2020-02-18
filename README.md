@@ -2,6 +2,9 @@
 
 > View details on copyright website footer/HTML
 
+Name: otherside_copyright_tool
+Version: 0.1.0
+
 ## Installation
 
 Add this line to your application's Gemfile:
