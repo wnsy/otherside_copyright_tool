@@ -1,8 +1,6 @@
 # OthersideCopyrightTool
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/otherside_copyright_tool`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+> View details on copyright website footer/HTML
 
 ## Installation
 
@@ -22,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Example:
+Create the following in the  `application_controller.rb`
+
+```ruby
+before_action :method_name_here
+```
+
+Create a new method for the `before_action` to set an instance variable to be something like:
+
+```ruby
+def :method_name_here
+  @copyright = OthersideCopyrightTool::Render.copyright 'Other-Side.net', 'All rights reserved'
+end
+```
 
 ## Development
 
